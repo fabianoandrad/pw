@@ -12,7 +12,6 @@
     <textarea id="textarea" type="textarea"></textarea>">
 
     <script>
-        var objPush; 
         addEventListener('load', async () =>{
             let sw = await navigator.serviceWorker.register('./sw.js')
             console.log(sw)
@@ -25,6 +24,7 @@
                 applicationServerKey: 'BOWQ7tSJgScHu-3gj4YT0mhVi9wFIfERi_xcGHlgHqvoeWVOvLENC_eRwyU9nXldAHoo-YyMCRVCW_EgFyOIH1E'
             })
             console.log(JSON.stringify(push))
+            document.getElementById("textarea").innerHTML
             document.getElementById("textarea").innerHTML = JSON.stringify(push)
         }
 
