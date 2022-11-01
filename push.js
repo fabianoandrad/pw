@@ -7,6 +7,10 @@ let vapidKeys = {
 
   push.setVapidDetails('mailto:test@code.com.br', vapidKeys.publicKey, vapidKeys.privateKey)
 
-  let sub = {"endpoint":"https://fcm.googleapis.com/fcm/send/cTs09R2xpXU:APA91bEGeXqkkf6IfPT8OCrMLNiy1vtMQF0HeEk6tRRokcoK1fILNWM3YFtG1HwFL2Tg5jPEnV4gRd6vRqLvXtylBVP5pUuLhbM51_I-RGTUmZBjAPybi53szw6shonSclfX-u6SXStz","expirationTime":null,"keys":{"p256dh":"BNQv8OydMs3GFIevovrVTAQ0c6ogBYc5t2eHV3TGwO3N1KARtTWPNYKDrzy4NgnLMgT1w7-PeN9GotXzmPUmeEg","auth":"3lOBVsbNSrOT_bI2qsCEUw"}}
+  let sub = {"endpoint":"https://wns2-bl2p.notify.windows.com/w/?token=BQYAAACL9EcS1KpDl%2f1bfkVNZjOI5kKVFRaKuuZ1nEBL3V82iUpRBm6tONczqbLCeLKooTAmxzx9Q2kmLSbAuw%2b6AgRnWTjZsF%2bQNxvmvBV%2bGa4X9V5P%2bGNbdURPqPC62D6JganYXlhisgyWczViy9bApOuLnMQlHGRjHR2THiIGrkj7TOzRvLl%2bu4RC649ZuFx2WTX9%2b83BcXj7D0dYjtBO4VQV8ZwTFgh2RB6N2ZoEpYn5f0pSikLM9tzj9xL78VjLbo0Hqi2avSdcYkChMHOz%2fK%2f6vMLGu9rMepNuHlUqsld5kjyElELBTW3fgGS4NrlCc5kQSHBBBF9QWzDQ3uTXdKXX","expirationTime":null,"keys":{"p256dh":"BITB5Gc2xopB2Gis2GKndBLdo-MWqhSGHVeYccaXEmBHbsoZHrKcCewQNHDMK9ByJjwKCNOkvtpFbSoLo_-IbXA","auth":"abSgwsgUnan9-bw2l1F5OA"}}
+
+  //let sub = {"endpoint":"https://fcm.googleapis.com/fcm/send/fBDTTsMBBD0:APA91bFlbVRFROGDfC-qmdkcz-tmubiHCK6EXW76xueVifSVhJqBAl7-CHTdjax13SauQb6Q44PIzE1K0XTQ2IOW3n1xvfG0mrdfxEtOm31qHAHU9XeJ3hkM5B7qYD3-4XremOJZEikp","expirationTime":null,"keys":{"p256dh":"BMTZE9ij83R4j_S8VRnIn0FnQ5kxSMWjRMJ0oNxFL_TD_wucph-SMob5MogtDQNsgrYxtZ2RkGImOTTJZJJ_Hy0","auth":"VF5-EPXZtFL1V3dMrwdoWA"}}
+
+  //let sub = {"endpoint":"https://updates.push.services.mozilla.com/wpush/v2/gAAAAABjY…y4ul9WdDXNd0h-nIP9bTWWNmZefv5IHXHSqRWOmg2PSeZjojZ_YVd3ODshhY","expirationTime":null,"keys":{"auth":"51km-MtO9sECvsBQGTy9TQ","p256dh":"BK81IgSVbOHHFjauSc0XGLVbaPPncr4qpdCxmMB2SkNo83Lu0ING7dLHbsUx35htSjGqpIV-cuxya2WakzzV2io"}}
 
   push.sendNotification(sub, 'Teste notificação')
