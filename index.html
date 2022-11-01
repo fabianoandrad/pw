@@ -19,12 +19,12 @@
 
         async function subscribe(){
             let sw = await navigator.serviceWorker.ready;
-            let push = await sw.pushManager.subscribe({
+            let push = PushSubscription;
+            push = await sw.pushManager.subscribe({
                 userVisibleOnly: true,
                 applicationServerKey: 'BOWQ7tSJgScHu-3gj4YT0mhVi9wFIfERi_xcGHlgHqvoeWVOvLENC_eRwyU9nXldAHoo-YyMCRVCW_EgFyOIH1E'
             })
             console.log(JSON.stringify(push))
-            document.getElementById("textarea").innerHTML
             document.getElementById("textarea").innerHTML = JSON.stringify(push)
         }
 
