@@ -9,7 +9,7 @@
 <body>
     
     <button onclick="subscribe()">Subscribe</button>
-    <textarea type="textarea" value="objPush">@objPush</textarea>">
+    <textarea id="textarea" type="textarea"></textarea>">
 
     <script>
         var objPush = {}; 
@@ -27,6 +27,8 @@
             console.log(JSON.stringify(push))
             objPush = JSON.stringify(push);
         }
+
+        document.getElementById("textarea").innerHTML = objPush
 
 
     </script>
